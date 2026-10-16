@@ -1,0 +1,70 @@
+mattoid-plugin-scheduler:
+  admin:
+    nav-title: Plugin Scheduler
+    rules-title: Scheduled Rules
+    enable: Enable
+    disable: Disable
+    repeat-once: Once
+    repeat-daily: Daily
+    repeat-weekly: Weekly
+    repeat-monthly: Monthly
+    repeat-yearly: Yearly
+    weekday-mon: Monday
+    weekday-tue: Tuesday
+    weekday-wed: Wednesday
+    weekday-thu: Thursday
+    weekday-fri: Friday
+    weekday-sat: Saturday
+    weekday-sun: Sunday
+    weekday-required: Please select at least one weekday
+    delete: Delete
+    edit: Edit
+    add-rule: "+ Add Rule"
+    save-rules: Save
+    save-failed: Save failed, please check the rule parameters and try again
+    timezone: Execution timezone
+    no-rules: No scheduled rules yet
+    extension-search-placeholder: Type extension title or ID to search
+    no-extension-matched: No matched extension
+    confirm-delete: Delete this rule?
+    rule-type-extension: Extension
+    rule-type-setting: Site Setting
+    action-set: Set to
+    action-reset: Reset to default
+    bool-on: "On"
+    bool-off: "Off"
+    setting-value-placeholder: Target value (leave empty to clear)
+    rule-enable: Enable
+    rule-disable: Disable
+    remark-placeholder: Remark (describe this rule)
+    image-upload: Upload Image
+    image-change: Change Image
+    image-clear: Clear
+    image-uploading: Uploading…
+    image-upload-failed: Image upload failed, please try again
+    setting-group-basics: Basics
+    setting-group-appearance: Appearance
+    setting-forum_title: Forum Title
+    setting-forum_description: Forum Description
+    setting-welcome_title: Welcome Banner Title
+    setting-welcome_message: Welcome Banner Message
+    setting-logo_path: Logo
+    setting-favicon_path: Favicon
+    setting-theme_primary_color: Primary Color
+    setting-theme_secondary_color: Secondary Color
+    setting-theme_dark_mode: Dark Mode
+    setting-theme_colored_header: Colored Header
+    setting-custom_header: Custom Header
+    setting-custom_footer: Custom Footer
+    setting-custom_less: Custom Styles (LESS)
+  api:
+    invalid_rule_parameters: Invalid rule parameters
+    invalid_execute_time: Invalid execute time, expected Y-m-d H:i
+    invalid_action: Invalid action for setting rule, expected set/reset
+    unsupported_setting_key: Unsupported setting key
+    cannot_schedule_self: Cannot schedule the scheduler extension itself
+    unsupported_image_key: Unsupported image setting key
+    invalid_upload: Invalid upload
+    image_too_large: Image is too large (max 2 MB)
+    invalid_image: Uploaded file is not a valid image
+  forum:
