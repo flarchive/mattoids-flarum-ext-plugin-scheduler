@@ -1,0 +1,79 @@
+mattoid-plugin-scheduler:
+  admin:
+    nav-title: 插件计划管理
+    rules-title: 定时规则
+    enable: 开启
+    disable: 关闭
+    repeat-once: 单次
+    repeat-daily: 每天
+    repeat-weekly: 每周
+    repeat-monthly: 每月
+    repeat-yearly: 每年
+    weekday-mon: 周一
+    weekday-tue: 周二
+    weekday-wed: 周三
+    weekday-thu: 周四
+    weekday-fri: 周五
+    weekday-sat: 周六
+    weekday-sun: 周日
+    weekday-required: 请至少选择一个星期
+    delete: 删除
+    edit: 编辑
+    add-rule: "+ 添加规则"
+    save-rules: 保存
+    save-failed: 保存失败，请检查规则参数后重试
+    timezone: 执行时区
+    no-rules: 暂无定时规则
+    extension-search-placeholder: 输入插件名称或 ID 搜索
+    no-extension-matched: 没有匹配的插件
+    confirm-delete: 确定删除该规则吗？
+    rule-type-extension: 扩展
+    rule-type-setting: 站点设置
+    rule-type-ext-setting: 扩展设置
+    ext-setting-select-first: 请先选择扩展，其注册的配置项会显示在这里
+    ext-setting-no-changes: 扩展设置规则至少需要修改一项配置
+    configure-extension: 配置该扩展
+    ext-settings-save: 保存设置
+    ext-settings-collapse: 收起
+    action-set: 设置为
+    action-reset: 恢复默认
+    bool-on: 开启
+    bool-off: 关闭
+    setting-value-placeholder: 目标值（留空表示清空）
+    rule-enable: 启用
+    rule-disable: 禁用
+    remark-placeholder: 备注（标识规则作用）
+    image-upload: 上传图片
+    image-change: 更换图片
+    image-clear: 清除
+    image-uploading: 上传中…
+    image-upload-failed: 图片上传失败，请重试
+    setting-group-basics: 常规
+    setting-group-appearance: 外观
+    setting-forum_title: 站点标题
+    setting-forum_description: 站点描述
+    setting-welcome_title: 欢迎横幅标题
+    setting-welcome_message: 欢迎横幅内容
+    setting-logo_path: Logo
+    setting-favicon_path: 站点图标
+    setting-theme_primary_color: 主配色
+    setting-theme_secondary_color: 次配色
+    setting-theme_dark_mode: 深色模式
+    setting-theme_colored_header: 彩色导航栏
+    setting-custom_header: 自定义页眉
+    setting-custom_footer: 自定义页脚
+    setting-custom_less: 自定义样式 (LESS)
+  api:
+    invalid_rule_parameters: 规则参数无效
+    invalid_execute_time: 执行时间无效，应为 Y-m-d H:i 格式
+    invalid_action: 设置规则的操作无效，应为 set/reset
+    empty_settings_map: 扩展设置规则至少需要一项被修改的配置
+    too_many_settings: 单条规则包含的设置项过多（最多 100 项）
+    unsupported_setting_key: 不支持的设置项
+    invalid_settings_value: 设置值必须是标量
+    cannot_schedule_self: 不能对本插件自身创建定时规则
+    unsupported_image_key: 不支持的图片设置项
+    invalid_upload: 上传文件无效
+    image_too_large: 图片过大（最大 2 MB）
+    invalid_image: 上传的文件不是有效图片
+  forum:
