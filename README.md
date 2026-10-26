@@ -2,13 +2,15 @@
 
 > **Read-only archive of released versions of mattoid/flarum-ext-plugin-scheduler.** Not for installation: use [Packagist](https://packagist.org/packages/mattoid/flarum-ext-plugin-scheduler) or the [upstream repository](https://github.com/Mattoids/flarum-ext-plugin-scheduler).
 
-**0** versions archived · Latest: [`1.1.0`](https://github.com/flarchive/mattoids-flarum-ext-plugin-scheduler/tree/archive/v1.1.0) · License: `MIT` · Flarum: `^1.8.0`
+**3** versions archived · Latest: [`1.1.0`](https://github.com/flarchive/mattoids-flarum-ext-plugin-scheduler/tree/archive/v1.1.0) · License: `MIT` · Flarum: `^1.8.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0.0` | 2026-10-16 | `^1.8.0` | [Browse](https://github.com/flarchive/mattoids-flarum-ext-plugin-scheduler/tree/archive/v1.0.0) |
+| `v1.0.1` | 2026-10-19 | `^1.8.0` | [Browse](https://github.com/flarchive/mattoids-flarum-ext-plugin-scheduler/tree/archive/v1.0.1) |
+| `1.1.0` | 2026-10-26 | `^1.8.0` | [Browse](https://github.com/flarchive/mattoids-flarum-ext-plugin-scheduler/tree/archive/v1.1.0) |
 
 Catalog entry: [packages/mattoids-flarum-ext-plugin-scheduler.json](https://github.com/flarchive/archive-index/blob/main/packages/mattoids-flarum-ext-plugin-scheduler.json)
 
