@@ -1,0 +1,255 @@
+.PluginSchedulerPanel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: @body-bg;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  &-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  }
+}
+
+.PluginSchedulerRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  border-radius: 4px;
+
+  &--disabled {
+    opacity: 0.55;
+  }
+
+  .PluginSchedulerRemark {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: rgba(128, 128, 128, 0.08);
+  }
+
+  .FormControl,
+  select {
+    margin-bottom: 0;
+  }
+
+  &-name {
+    font-weight: 600;
+    min-width: 160px;
+  }
+
+  &-id {
+    color: @muted-color;
+    font-size: 12px;
+    flex: 1;
+  }
+
+  &-meta {
+    flex: 1;
+    color: @muted-color;
+    font-size: 13px;
+  }
+}
+
+.PluginSchedulerExtSearch {
+  max-width: 260px;
+}
+
+.PluginSchedulerExtSelect {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+
+  .PluginSchedulerExtSearch {
+    max-width: none;
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &-toggle {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    margin-top: 4px;
+    max-height: 260px;
+    overflow-y: auto;
+    background: @body-bg;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(128, 128, 128, 0.12);
+    }
+
+    &-title {
+      font-weight: 600;
+    }
+
+    &-id {
+      color: @muted-color;
+      font-size: 12px;
+    }
+  }
+
+  &-empty {
+    padding: 10px;
+    color: @muted-color;
+    text-align: center;
+  }
+}
+
+// 每周星期几单选下拉：与日期输入框同宽
+.PluginSchedulerWeekday,
+.PluginSchedulerDate {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+// 下拉内部 select 跟随外层容器宽度
+.PluginSchedulerWeekday .Select-input {
+  width: 100%;
+}
+
+.PluginSchedulerEmpty {
+  color: @muted-color;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.PluginSchedulerHint {
+  color: @muted-color;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+// 扩展设置规则：该扩展自己注册的后台设置表单，独占草稿行一整行
+.PluginSchedulerExtSettings {
+  flex: 1 1 100%;
+
+  .Form-group {
+    margin-bottom: 10px;
+  }
+
+  // 行内编辑模式：整行卡片式布局，与上方配置按钮区分开
+  &--editor {
+    flex: 1 1 100%;
+    padding: 14px;
+    margin-top: 4px;
+    background: @body-bg;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 8px;
+  }
+
+  &-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+  }
+}
+
+.PluginSchedulerActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.PluginSchedulerTimezone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+
+  &-label {
+    color: @muted-color;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .Select {
+    min-width: 180px;
+  }
+}
+
+.PluginSchedulerRow--draft {
+  flex-wrap: wrap;
+  padding: 10px;
+  background: rgba(128, 128, 128, 0.06);
+
+  &:hover {
+    background: rgba(128, 128, 128, 0.1);
+  }
+
+  .PluginSchedulerExtSelect {
+    flex: 1;
+    min-width: 220px;
+  }
+
+  .PluginSchedulerSettingValue {
+    flex: 1 1 100%;
+  }
+
+  textarea.PluginSchedulerSettingValue {
+    resize: vertical;
+    font-family: monospace;
+  }
+
+  .PluginSchedulerColor {
+    width: 60px;
+    height: 32px;
+    padding: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 4px;
+    background: transparent;
+  }
+}
+
+.PluginSchedulerImage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 100%;
+
+  &-preview {
+    max-height: 40px;
+    max-width: 120px;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 4px;
+  }
+}
